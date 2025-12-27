@@ -7,8 +7,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Cairo', sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
+  background-color: #fafbfd;
+  color: #222;
   line-height: 1.6;
 }
 
@@ -30,8 +30,8 @@ a:hover {
 
 /* Header */
 header {
-  background: #fff;
-  border-bottom: 1px solid #e5e5e5;
+  background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.9));
+  border-bottom: 1px solid rgba(0,0,0,0.06);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -41,12 +41,26 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 14px 0;
 }
 
 .logo {
-  height: 50px;
+  height: 56px;
+  transition: transform 0.18s ease;
 }
+
+/* Bootstrap navbar tweaks */
+.navbar {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.navbar .nav-link {
+  color: #2b2b2b;
+  font-weight: 800;
+  margin-inline-start: 10px;
+}
+.navbar .navbar-toggler { border: none; }
+.navbar-light .navbar-toggler-icon { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280,0,0,0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
 nav ul {
   list-style: none;
@@ -57,13 +71,14 @@ nav ul {
 }
 
 nav a {
-  color: #333;
-  font-weight: 700;
-  transition: color 0.3s;
+  color: #2b2b2b;
+  font-weight: 800;
+  transition: color 0.25s, transform 0.25s;
 }
 
 nav a:hover {
-  color: #007BFF;
+  color: #0d6efd;
+  transform: translateY(-2px);
 }
 
 /* Hero */
@@ -72,7 +87,7 @@ nav a:hover {
   background-image: url('images/hero.webp');
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  min-height: 64vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,12 +108,17 @@ nav a:hover {
 .hero-content {
   position: relative;
   z-index: 2;
+  max-width: 920px;
+  padding: 40px 20px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.22), rgba(0,0,0,0.12));
+  border-radius: 12px;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin: 0 0 10px;
+  font-size: 2.6rem;
+  margin: 0 0 12px;
   font-weight: 900;
+  letter-spacing: 0.5px;
 }
 
 .hero p {
@@ -107,25 +127,26 @@ nav a:hover {
 }
 
 .cta-btn {
-  padding: 10px 25px;
-  background: #FF6043;
+  padding: 12px 28px;
+  background: linear-gradient(90deg,#ff6b4a,#ff4f6a);
   color: #fff;
   border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: 700;
+  border-radius: 10px;
+  font-size: 1.02rem;
+  font-weight: 800;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
 .cta-btn:hover {
-  background: #E0523D;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(255,80,80,0.18);
 }
 
 /* Offers */
 .offers {
-  background: #f2f2f2;
-  padding: 50px 0;
+  background: transparent;
+  padding: 64px 0;
   text-align: center;
 }
 
@@ -135,29 +156,34 @@ nav a:hover {
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  align-items: stretch;
 }
 
 .card {
-  flex: 1 1 300px;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  background: #fff;
+  box-shadow: 0 8px 22px rgba(19,24,32,0.06);
+  background: linear-gradient(180deg,#ffffff,#fbfcff);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
 .card img {
   width: 100%;
   height: auto;
+  max-height: 260px;
+  object-fit: contain;
   display: block;
+  background: linear-gradient(180deg,#f6f7fb,#ffffff);
 }
+
+.card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(19,24,32,0.09); }
 
 /* About */
 .about {
-  padding: 60px 0;
+  padding: 72px 0;
 }
 
 .about-flex {
@@ -185,12 +211,14 @@ nav a:hover {
 .about-image img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(31,41,55,0.06);
 }
 
 /* Projects (Wells & Mosques) */
 .projects {
-  padding: 60px 0;
-  background: #fff;
+  padding: 72px 0;
+  background: transparent;
 }
 
 .projects h2 {
@@ -213,18 +241,21 @@ nav a:hover {
 }
 
 .project {
-  background: #f9f9f9;
-  border-radius: 8px;
+  background: linear-gradient(180deg,#ffffff,#fbfbff);
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  transition: transform 0.2s;
+  box-shadow: 0 10px 30px rgba(31,41,55,0.04);
+  transition: transform 0.24s cubic-bezier(.2,.9,.3,1), box-shadow 0.24s;
   text-align: center;
 }
 
 .project img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: auto;
+  max-height: 260px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+  background: linear-gradient(180deg,#f6f7fb,#ffffff);
 }
 
 .project h3 {
@@ -234,14 +265,17 @@ nav a:hover {
 }
 
 .project:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 26px 60px rgba(31,41,55,0.08);
 }
+
+.project:hover img { transform: scale(1.04); }
 
 /* Footer */
 footer {
-  background: #333;
-  color: #fff;
-  padding: 40px 0;
+  background: linear-gradient(180deg,#0b1220,#0f1724);
+  color: #e8eef8;
+  padding: 48px 0;
 }
 
 .footer-content {
@@ -251,7 +285,12 @@ footer {
 .footer-content h2 {
   margin-bottom: 15px;
   font-weight: 900;
+  color: #fff;
 }
+
+.footer-content p { color: #dfe7f3; }
+.footer-content .contact-list li { color: #dfe7f3; }
+.footer-content .text-light { color: #fff !important; }
 
 .contact-list {
   list-style: none;
@@ -261,8 +300,8 @@ footer {
 }
 
 .contact-list a {
-  color: #fcb040;
-  font-weight: 700;
+  color: #ffd48a;
+  font-weight: 800;
 }
 
 .copyright {
@@ -287,8 +326,8 @@ footer {
 /* Floating action buttons */
 .floating-actions {
   position: fixed;
-  right: 20px;
-  bottom: 24px;
+  right: 22px;
+  bottom: 28px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -297,15 +336,15 @@ footer {
 }
 
 .floating-btn {
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   text-decoration: none;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 36px rgba(14,21,42,0.12);
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
@@ -323,8 +362,68 @@ footer {
 
 /* Ensure Bootstrap icon inside button is centered and sized */
 .floating-btn .bi {
-  font-size: 20px;
+  font-size: 22px;
   color: #fff;
   line-height: 1;
   display: inline-block;
+}
+
+/* small screens tweaks */
+@media (max-width: 768px) {
+  .container { width: 94%; }
+  .hero { min-height: 56vh; }
+  .hero h1 { font-size: 1.9rem; }
+  .cards { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+}
+
+@media (max-width: 480px) {
+  .floating-actions { right: 12px; bottom: 14px; }
+  .floating-btn { width: 46px; height: 46px; }
+  .logo { height: 48px; }
+}
+
+/* Horizontal carousel behavior for large screens */
+@media (min-width: 992px) {
+  .cards, .project-grid {
+    display: flex !important;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 8px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cards > .card, .project-grid > .project {
+    flex: 0 0 calc((100% - 60px) / 4);
+    scroll-snap-align: start;
+    min-width: 220px;
+  }
+
+  .cards::-webkit-scrollbar, .project-grid::-webkit-scrollbar { height: 8px; }
+  .cards::-webkit-scrollbar-thumb, .project-grid::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.08); border-radius: 8px; }
+
+  /* Carousel controls */
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.92);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 6px 18px rgba(10,20,30,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 20;
+  }
+  .carousel-prev { left: 8px; }
+  .carousel-next { right: 8px; }
+
+  /* hide controls on small widths */
+  @media (max-width: 1199px) {
+    .carousel-btn { display: none; }
+  }
 }

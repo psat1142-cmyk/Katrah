@@ -8,23 +8,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png">
+    <!-- Bootstrap CSS (optional - provides responsive helpers and components) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ENjdO4Dr2bkBIFxQpeoYz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header / Navigation -->
-    <header>
-        <div class="container nav-wrapper">
-            <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/logo.png" alt="شعار قطرة" class="logo"></a>
-            <nav>
-                <ul>
-                    <li><a href="#about">من نحن</a></li>
-                    <li><a href="#wells">مشاريع الآبار</a></li>
-                    <li><a href="#mosques">مشاريع المساجد</a></li>
-                    <li><a href="#contact">تواصل معنا</a></li>
-                </ul>
+        <!-- Header / Navigation (Bootstrap) -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="#">
+                        <img src="images/logo.png" alt="شعار قطرة" class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNavbar">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#wells">مشاريع الآبار</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#mosques">مشاريع المساجد</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-        </div>
-    </header>
+        </header>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -42,10 +53,10 @@
             <h2>عروضنا الحالية</h2>
             <div class="cards">
                 <div class="card">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/card1.jpg" alt="عرض ١"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/card1.jpg" alt="عرض ١"></a>
                 </div>
                 <div class="card">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/card2.jpg" alt="عرض ٢"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/card2.jpg" alt="عرض ٢"></a>
                 </div>
              
             </div>
@@ -66,7 +77,7 @@
                 </p>
             </div>
             <div class="about-image">
-                <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/Qatra-29.png" alt="عمال يركبون مضخة"></a>
+                <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/Qatra-29.png" alt="عمال يركبون مضخة"></a>
             </div>
         </div>
     </section>
@@ -78,47 +89,47 @@
             <p class="section-lead">اختر من بين مشاريع حفر الآبار المتنوعة في مختلف البلدان.</p>
             <div class="project-grid">
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/sathi-bangla.jpeg" alt="بئر سطحية بنغلاديش"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/sathi-bangla.jpeg" alt="بئر سطحية بنغلاديش"></a>
                     <h3>بئر سطحية – بنغلاديش</h3>
                 </div>
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/sathi-india.jpeg" alt="بئر سطحية – الهند"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/sathi-india.jpeg" alt="بئر سطحية – الهند"></a>
                     <h3>بئر سطحية – الهند</h3>
                 </div>
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/sath-ghana.jpeg" alt="بئر سطحية – غانا"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/sath-ghana.jpeg" alt="بئر سطحية – غانا"></a>
                     <h3>بئر سطحية – غانا</h3>
                 </div>
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/sathi-nibal.jpeg" alt="بئر سطحية – نيبال"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/sathi-nibal.jpeg" alt="بئر سطحية – نيبال"></a>
                     <h3>بئر سطحية – نيبال</h3>
                 </div>
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/sathiK-indo.jpeg" alt="بئر سطحية – إندونيسيا"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/sathiK-indo.jpeg" alt="بئر سطحية – إندونيسيا"></a>
                     <h3>بئر سطحية – إندونيسيا</h3>
                 </div>
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/artwazi-ghana.jpeg" alt="بئر ارتوازي – غانا"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/artwazi-ghana.jpeg" alt="بئر ارتوازي – غانا"></a>
                     <h3>بئر ارتوازي – غانا</h3>
                 </div>
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/artwazi-india.jpeg" alt="بئر ارتوازي – الهند"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/artwazi-india.jpeg" alt="بئر ارتوازي – الهند"></a>
                     <h3>بئر ارتوازي – الهند</h3>
                 </div>
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/artwazi-nibal.jpeg" alt="بئر عميقة – نيبال"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/artwazi-nibal.jpeg" alt="بئر عميقة – نيبال"></a>
                     <h3>بئر عميقة – نيبال</h3>
                 </div>
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/dalo-ghana.jpeg" alt="بئر دلو – غانا"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/dalo-ghana.jpeg" alt="بئر دلو – غانا"></a>
                     <h3>بئر دلو – غانا</h3>
                 </div>
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/sathiK-indo.jpeg" alt="بئر كهربائي – اندونسيا"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/sathiK-indo.jpeg" alt="بئر كهربائي – اندونسيا"></a>
                     <h3>بئر كهربائي – اندونسيا</h3>
                 </div>
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/sathik-bangla.jpeg" alt="بئر كهربائي – بنغلاديش"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/sathik-bangla.jpeg" alt="بئر كهربائي – بنغلاديش"></a>
                     <h3>بئر كهربائي – بنغلاديش</h3>
                 </div>
             </div>
@@ -132,32 +143,32 @@
             <p class="section-lead">شارك في بناء بيت من بيوت الله في دول متعددة.</p>
             <div class="project-grid">
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/msajed/JameS-bnen.jpeg" alt="جامع صغير – بنين"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/msajed/JameS-bnen.jpeg" alt="جامع صغير – بنين"></a>
                     <h3>جامع صغير – بنين</h3>
                 </div>
 
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/msajed/masjed-bnien.jpeg" alt="بناء مسجد – بنين"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/msajed/masjed-bnien.jpeg" alt="بناء مسجد – بنين"></a>
                     <h3>بناء مسجد – بنين</h3>
                 </div>
 
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/msajed/james-malawi.jpeg" alt="جامع صغير – ملاوي"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/msajed/james-malawi.jpeg" alt="جامع صغير – ملاوي"></a>
                     <h3>جامع صغير – ملاوي</h3>
                 </div>
 
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/msajed/JameK-malawi.jpeg" alt="جامع كبير – ملاوي"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/msajed/JameK-malawi.jpeg" alt="جامع كبير – ملاوي"></a>
                     <h3>جامع كبير – ملاوي</h3>
                 </div>
 
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/msajed/jameK_baer_ghana.jpeg" alt="جامع كبير + بئر – غانا"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/msajed/jameK_baer_ghana.jpeg" alt="جامع كبير + بئر – غانا"></a>
                     <h3>جامع كبير + بئر – غانا</h3>
                 </div>
 
                 <div class="project">
-                    <a href="https://wa.me/966568950149" target="_blank" rel="noopener noreferrer"><img src="images/msajed/jamek-togo.jpeg" alt="جامع كبير – توغو"></a>
+                    <a href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer"><img src="images/msajed/jamek-togo.jpeg" alt="جامع كبير – توغو"></a>
                     <h3>جامع كبير – توغو</h3>
                 </div>
 
@@ -201,17 +212,26 @@
     </section>
 
     <!-- Contact / Footer Section -->
-    <footer id="contact">
-        <div class="container footer-content">
-            <h2>تواصل معنا</h2>
-            <p>إذا كان لديك أي استفسار أو ترغب في المساهمة، يرجى التواصل عبر القنوات التالية:</p>
-            <ul class="contact-list">
-                <li>الهاتف: <a href="tel:+966505295998">+966505295998 </a></li>
-                <li>العنوان: الرياض، المملكة العربية السعودية</li>
-            </ul>
-            <p class="copyright">&copy; 2025 مؤسسة قطرة. جميع الحقوق محفوظة.</p>
-        </div>
-    </footer>
+        <footer id="contact">
+            <div class="container footer-content">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-md-start text-center mb-3 mb-md-0">
+                        <h2>تواصل معنا</h2>
+                        <p>إذا كان لديك أي استفسار أو ترغب في المساهمة، يرجى التواصل عبر القنوات التالية:</p>
+                        <ul class="contact-list">
+                            <li>الهاتف: <a href="tel:+966505295998">+966505295998</a></li>
+                            <li>العنوان: الرياض، المملكة العربية السعودية</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-md-end text-center">
+                        <p>تابعنا</p>
+                        <a class="text-light me-2" href="https://wa.me/message/T2DY4FZXMKAZN1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp" style="font-size:1.6rem"></i></a>
+                        <a class="text-light me-2" href="mailto:qatra.est@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill" style="font-size:1.4rem"></i></a>
+                        <p class="mt-3 mb-0">&copy; 2025 مؤسسة قطرة. جميع الحقوق محفوظة.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     <!-- Floating action buttons: WhatsApp and Phone -->
     <div class="floating-actions" aria-hidden="false">
@@ -228,4 +248,33 @@
     </div>
 
 </body>
+<!-- Bootstrap JS bundle (optional, needed for components) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qENq5mVZ0f3pJr1+6H2b6e0zYk1fXK8l3Z6b6Q5eY5F5j6F5k6G5k6G5k6G5k6G5" crossorigin="anonymous"></script>
+<script>
+// Create carousel controls for horizontal scroll containers
+;(function(){
+    const containers = document.querySelectorAll('.cards, .project-grid');
+    containers.forEach(container => {
+        const parent = container.parentElement || container;
+        parent.style.position = parent.style.position || 'relative';
+
+        const prev = document.createElement('button');
+        prev.className = 'carousel-btn carousel-prev';
+        prev.innerHTML = '&lsaquo;';
+        const next = document.createElement('button');
+        next.className = 'carousel-btn carousel-next';
+        next.innerHTML = '&rsaquo;';
+
+        prev.addEventListener('click', () => {
+            container.scrollBy({ left: -Math.round(container.clientWidth/4), behavior: 'smooth' });
+        });
+        next.addEventListener('click', () => {
+            container.scrollBy({ left: Math.round(container.clientWidth/4), behavior: 'smooth' });
+        });
+
+        parent.appendChild(prev);
+        parent.appendChild(next);
+    });
+})();
+</script>
 </html>
